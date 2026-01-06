@@ -1,0 +1,8 @@
+# DIY Kiosk Landing Page - Cloudflare Pages Config
+name = "diy-kiosk"
+pages_build_output_dir = "."
+
+# Custom domain configured in Cloudflare dashboard:
+# 1. Go to Workers & Pages > diy-kiosk > Custom domains
+# 2. Add domain: diy-kiosk.store
+# 3. Cloudflare will auto-configure DNS if domain is on CF

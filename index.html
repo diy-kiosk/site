@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIY Kiosk - Phần mềm bán hàng miễn phí cho F&B</title>
+  <meta name="description" content="Phần mềm quản lý bán hàng miễn phí, hoạt động offline, dễ sử dụng - dành cho quán café, trà sữa, nhà hàng nhỏ.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DIY Kiosk - Phần mềm bán hàng miễn phí">
+  <meta property="og:description" content="Phần mềm quản lý bán hàng miễn phí, hoạt động offline, dễ sử dụng cho F&B.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://diy-kiosk.store">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            'primary-dark': '#1d4ed8',
+            accent: '#10b981',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold text-primary">DIY Kiosk</a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#features" class="text-gray-600 hover:text-primary">Tính năng</a>
+        <a href="#how-it-works" class="text-gray-600 hover:text-primary">Cách dùng</a>
+        <a href="#waitlist" class="text-gray-600 hover:text-primary">Đăng ký</a>
+      </nav>
+      <a href="#waitlist" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition">
+        Dùng thử
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-4 bg-gradient-to-b from-blue-50 to-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        Phần mềm bán hàng đơn giản<br>cho quán café, trà sữa, nhà hàng
+      </h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Miễn phí • Hoạt động offline • Dễ sử dụng
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://demo.diy-kiosk.store" target="_blank" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-primary-dark transition">
+          Xem Demo
+        </a>
+        <a href="#download" class="border-2 border-primary text-primary px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-50 transition">
+          Tải về
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Screenshot Placeholder -->
+    <div class="max-w-4xl mx-auto mt-12">
+      <div class="bg-gray-200 rounded-xl aspect-video flex items-center justify-center text-gray-500">
+        <!-- TODO: Add app screenshot -->
+        <span>Screenshot ứng dụng</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-4">Tính năng chính</h2>
+      <p class="text-gray-600 text-center mb-12">Mọi thứ bạn cần để quản lý bán hàng</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="p-6 rounded-xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Không cần internet</h3>
+          <p class="text-gray-600">Bán hàng bình thường khi mất mạng, tự đồng bộ khi có wifi</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-6 rounded-xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Quản lý nhiều đơn</h3>
+          <p class="text-gray-600">Xử lý nhiều bàn/khách cùng lúc, chuyển đổi nhanh chóng</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-6 rounded-xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Thanh toán QR</h3>
+          <p class="text-gray-600">Khách quét mã VietQR, tiền về tài khoản ngay lập tức</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="p-6 rounded-xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">In hóa đơn</h3>
+          <p class="text-gray-600">Xuất PDF hoặc in trực tiếp từ máy in nhiệt</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="p-6 rounded-xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Miễn phí mãi mãi</h3>
+          <p class="text-gray-600">Không phí hàng tháng, không phí ẩn, không giới hạn đơn hàng</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="p-6 rounded-xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Cài đặt nhanh</h3>
+          <p class="text-gray-600">Tải APK về tablet Android, mở lên là dùng được ngay</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Users Section -->
+  <section class="py-20 px-4 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12">Phù hợp với</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <span class="text-3xl mb-2 block">☕</span>
+          <span class="font-medium">Quán café</span>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <span class="text-3xl mb-2 block">🧋</span>
+          <span class="font-medium">Trà sữa</span>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <span class="text-3xl mb-2 block">🍜</span>
+          <span class="font-medium">Quán ăn nhỏ</span>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <span class="text-3xl mb-2 block">🥐</span>
+          <span class="font-medium">Tiệm bánh</span>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <span class="text-3xl mb-2 block">🚚</span>
+          <span class="font-medium">Food truck</span>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <span class="text-3xl mb-2 block">🏪</span>
+          <span class="font-medium">Cửa hàng nhỏ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Cách sử dụng</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+          <h3 class="text-xl font-semibold mb-2">Tải về</h3>
+          <p class="text-gray-600">Tải APK về tablet Android hoặc mở trên trình duyệt</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+          <h3 class="text-xl font-semibold mb-2">Cấu hình</h3>
+          <p class="text-gray-600">Thêm menu, giá cả, thông tin quán của bạn</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+          <h3 class="text-xl font-semibold mb-2">Bán hàng</h3>
+          <p class="text-gray-600">Nhận đơn, thanh toán, in hóa đơn - đơn giản!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section id="demo" class="py-20 px-4 bg-gradient-to-b from-white to-blue-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Xem Demo</h2>
+      <p class="text-gray-600 mb-8">Trải nghiệm ngay trên trình duyệt, không cần cài đặt</p>
+
+      <!-- Demo Screenshot Placeholder -->
+      <div class="bg-gray-200 rounded-xl aspect-video flex items-center justify-center text-gray-500 mb-8">
+        <!-- TODO: Add demo screenshot or iframe -->
+        <span>Demo Preview</span>
+      </div>
+
+      <a href="https://demo.diy-kiosk.store" target="_blank" class="inline-block bg-primary text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-primary-dark transition">
+        Mở Demo →
+      </a>
+      <p class="text-sm text-gray-500 mt-4">* Demo chạy trên trình duyệt với dữ liệu mẫu</p>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Tải về</h2>
+      <p class="text-gray-600 mb-8">Đăng ký để nhận APK sớm nhất khi có phiên bản chính thức</p>
+
+      <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mb-6 inline-block">
+        <p class="text-yellow-800 font-medium mb-2">🚧 Đang trong giai đoạn Closed Testing</p>
+        <p class="text-yellow-700 text-sm">Đăng ký bên dưới để trở thành tester và nhận quyền tải APK từ Play Store</p>
+      </div>
+
+      <div>
+        <a href="#waitlist" class="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-xl text-lg font-medium hover:bg-primary-dark transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+          </svg>
+          Đăng ký nhận APK
+        </a>
+      </div>
+
+      <p class="text-sm text-gray-500 mt-6">
+        Yêu cầu: Android 7.0 trở lên • Dung lượng: ~15MB
+      </p>
+    </div>
+  </section>
+
+  <!-- Waitlist Section -->
+  <section id="waitlist" class="py-20 px-4 bg-primary">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Đăng ký dùng thử</h2>
+      <p class="text-blue-100 mb-8">Nhận tài khoản tester sớm nhất khi có phiên bản mới</p>
+
+      <!-- Google Form Embed Placeholder -->
+      <div class="bg-white rounded-xl p-8">
+        <p class="text-gray-500 mb-4">Form đăng ký</p>
+        <!-- TODO: Replace with actual Google Form embed -->
+        <iframe
+          src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+          width="100%"
+          height="400"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          class="rounded-lg">
+          Đang tải...
+        </iframe>
+
+        <!-- Or use custom form with Apps Script -->
+        <!--
+        <form action="YOUR_APPS_SCRIPT_URL" method="POST" class="space-y-4">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email của bạn"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none"
+          >
+          <button
+            type="submit"
+            class="w-full bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-dark transition"
+          >
+            Đăng ký ngay
+          </button>
+        </form>
+        -->
+      </div>
+
+      <p class="text-blue-100 text-sm mt-6">
+        ✓ Không spam • Chỉ gửi khi có update quan trọng
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-4 bg-gray-900 text-gray-400">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <span class="text-xl font-bold text-white">DIY Kiosk</span>
+          <p class="text-sm mt-1">Phần mềm bán hàng miễn phí cho F&B</p>
+        </div>
+        <div class="flex gap-6">
+          <a href="https://github.com/diy-kiosk-org" target="_blank" class="hover:text-white transition">GitHub</a>
+          <a href="https://github.com/diy-kiosk-org/diy-kiosk-app/issues" target="_blank" class="hover:text-white transition">Báo lỗi</a>
+          <a href="#waitlist" class="hover:text-white transition">Liên hệ</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        <p>© 2025 DIY Kiosk. Mã nguồn mở.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
