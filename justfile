@@ -11,8 +11,3 @@ default:
 dev:
     mise x -- bunx serve -p 3000
 
-# ===== Deployment =====
-
-# Deploy to Cloudflare Pages
-deploy:
-    mise x -- bunx wrangler pages deploy .
