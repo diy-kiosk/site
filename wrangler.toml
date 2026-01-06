@@ -2,6 +2,11 @@
 name = "diy-kiosk"
 pages_build_output_dir = "."
 
+# KV namespace for email subscriptions
+[[kv_namespaces]]
+binding = "KV_BINDING"
+id = "a6bc27362b9e4229b6811d7ab20484be"
+
 # Custom domain configured in Cloudflare dashboard:
 # 1. Go to Workers & Pages > diy-kiosk > Custom domains
 # 2. Add domain: diy-kiosk.store
