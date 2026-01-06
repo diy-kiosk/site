@@ -352,13 +352,36 @@
       });
     });
 
+    // Email validation
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
     // Subscribe form handler
     document.getElementById('subscribe-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = document.getElementById('submit-btn');
       const msg = document.getElementById('form-message');
-      const email = document.getElementById('email').value;
+      const emailInput = document.getElementById('email');
+      const email = emailInput.value.trim();
       const website = document.getElementById('website').value;
+
+      // Validate email
+      if (!email) {
+        msg.classList.remove('hidden', 'text-green-600');
+        msg.classList.add('text-red-600');
+        msg.textContent = 'Vui lòng nhập email';
+        emailInput.focus();
+        return;
+      }
+
+      if (!isValidEmail(email)) {
+        msg.classList.remove('hidden', 'text-green-600');
+        msg.classList.add('text-red-600');
+        msg.textContent = 'Email không hợp lệ';
+        emailInput.focus();
+        return;
+      }
 
       btn.disabled = true;
       btn.textContent = 'Đang gửi...';
