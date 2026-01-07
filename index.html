@@ -98,14 +98,43 @@
       </div>
     </div>
 
-    <!-- Hero Screenshot - Animated Demo Preview -->
+    <!-- Hero Screenshot - Demo Carousel -->
     <div class="max-w-4xl mx-auto mt-12">
-      <div class="rounded-xl overflow-hidden shadow-2xl border border-gray-200">
-        <img
-          src="assets/images/diy-kiosk-demo-v2.gif"
-          alt="DIY Kiosk Demo - Chọn món, thêm vào giỏ hàng, thanh toán"
-          class="w-full"
-        >
+      <div class="relative">
+        <!-- Carousel Container -->
+        <div id="demo-carousel" class="rounded-xl overflow-hidden shadow-2xl border border-gray-200 relative bg-gray-100">
+          <img
+            id="carousel-img"
+            src="assets/images/scene-1-menu.gif"
+            alt="DIY Kiosk Demo"
+            class="w-full"
+          >
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button id="carousel-prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 w-10 h-10 rounded-full shadow-lg flex items-center justify-center transition opacity-80 hover:opacity-100 z-10">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <button id="carousel-next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 w-10 h-10 rounded-full shadow-lg flex items-center justify-center transition opacity-80 hover:opacity-100 z-10">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+
+        <!-- Dot Indicators -->
+        <div class="flex justify-center gap-2 mt-4">
+          <button class="carousel-dot w-3 h-3 rounded-full bg-primary transition-colors" data-index="0" title="Menu chính"></button>
+          <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" data-index="1" title="Giỏ hàng"></button>
+          <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" data-index="2" title="Thanh toán"></button>
+          <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" data-index="3" title="Quản lý menu"></button>
+        </div>
+
+        <!-- Scene Labels -->
+        <div class="text-center mt-2">
+          <span id="carousel-label" class="text-sm text-gray-500">1/4 - Menu chính</span>
+        </div>
       </div>
     </div>
   </section>
@@ -252,7 +281,7 @@
       <!-- Demo - Animated Preview -->
       <div class="rounded-xl overflow-hidden shadow-2xl border border-gray-200 mb-8">
         <img
-          src="assets/images/diy-kiosk-demo-v2.gif"
+          src="assets/images/diy-kiosk-demo-5scenes.gif"
           alt="DIY Kiosk Demo - Xem quy trình bán hàng"
           class="w-full"
           loading="lazy"
@@ -358,6 +387,101 @@
         }
       });
     });
+
+    // Demo Carousel
+    (function() {
+      const scenes = [
+        { src: 'assets/images/scene-1-menu.gif', label: 'Menu chính' },
+        { src: 'assets/images/scene-2-cart.gif', label: 'Giỏ hàng' },
+        { src: 'assets/images/scene-3-payment.gif', label: 'Thanh toán' },
+        { src: 'assets/images/scene-5-admin.gif', label: 'Quản lý menu' }
+      ];
+
+      let currentIndex = 0;
+      let autoPlayInterval = null;
+      const img = document.getElementById('carousel-img');
+      const label = document.getElementById('carousel-label');
+      const dots = document.querySelectorAll('.carousel-dot');
+      const prevBtn = document.getElementById('carousel-prev');
+      const nextBtn = document.getElementById('carousel-next');
+
+      function updateCarousel(index) {
+        currentIndex = index;
+        img.src = scenes[index].src;
+        label.textContent = `${index + 1}/${scenes.length} - ${scenes[index].label}`;
+
+        dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.remove('bg-gray-300', 'hover:bg-gray-400');
+            dot.classList.add('bg-primary');
+          } else {
+            dot.classList.remove('bg-primary');
+            dot.classList.add('bg-gray-300', 'hover:bg-gray-400');
+          }
+        });
+      }
+
+      function nextSlide() {
+        updateCarousel((currentIndex + 1) % scenes.length);
+      }
+
+      function prevSlide() {
+        updateCarousel((currentIndex - 1 + scenes.length) % scenes.length);
+      }
+
+      function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 4000);
+      }
+
+      function stopAutoPlay() {
+        if (autoPlayInterval) {
+          clearInterval(autoPlayInterval);
+          autoPlayInterval = null;
+        }
+      }
+
+      // Event listeners
+      prevBtn.addEventListener('click', () => {
+        stopAutoPlay();
+        prevSlide();
+        startAutoPlay();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        stopAutoPlay();
+        nextSlide();
+        startAutoPlay();
+      });
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          stopAutoPlay();
+          updateCarousel(index);
+          startAutoPlay();
+        });
+      });
+
+      // Pause on hover
+      const carousel = document.getElementById('demo-carousel');
+      carousel.addEventListener('mouseenter', stopAutoPlay);
+      carousel.addEventListener('mouseleave', startAutoPlay);
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+          stopAutoPlay();
+          prevSlide();
+          startAutoPlay();
+        } else if (e.key === 'ArrowRight') {
+          stopAutoPlay();
+          nextSlide();
+          startAutoPlay();
+        }
+      });
+
+      // Start auto-play
+      startAutoPlay();
+    })();
 
     // Email validation
     function isValidEmail(email) {
