@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "DIY Kiosk - Build Your Own POS | Free Sales Software",
+    "description": "DIY Kiosk - Free POS software that works offline, easy to use. For cafés, bubble tea shops, small restaurants. Download free Android APK.",
+    "ogTitle": "DIY Kiosk - Build Your Own POS",
+    "ogDescription": "Free POS software that works offline, easy to use for F&B.",
+    "locale": "en_US"
+  },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "register": "Register",
+    "tryNow": "Try Now",
+    "backToHome": "← Back to Home"
+  },
+  "hero": {
+    "title": "Do It Yourself — Build Your Own POS",
+    "subtitle": "Free • Works Offline • Easy to Use",
+    "viewDemo": "View Demo",
+    "download": "Download"
+  },
+  "carousel": {
+    "scenes": {
+      "menu": "Main Menu",
+      "cart": "Shopping Cart",
+      "payment": "Payment",
+      "admin": "Menu Management"
+    }
+  },
+  "features": {
+    "title": "Key Features",
+    "subtitle": "Everything you need to manage sales",
+    "offline": {
+      "title": "No Internet Required",
+      "description": "Sell normally when offline, auto-sync when connected"
+    },
+    "multiOrder": {
+      "title": "Multi-Order Management",
+      "description": "Handle multiple tables/customers at once, switch quickly"
+    },
+    "voice": {
+      "title": "Voice Confirmation",
+      "description": "Auto reads \"Payment successful, 50,000 VND\" - clear for customers",
+      "badge": "New"
+    },
+    "qr": {
+      "title": "QR Payment",
+      "description": "Customers scan VietQR code, money arrives instantly",
+      "badge": "Coming Soon"
+    },
+    "print": {
+      "title": "Print Receipts",
+      "description": "Export PDF or print directly from thermal printer"
+    },
+    "free": {
+      "title": "Free Forever",
+      "description": "No monthly fees, no hidden costs, unlimited orders"
+    },
+    "quickSetup": {
+      "title": "Quick Setup",
+      "description": "Download APK to Android tablet, open and start using"
+    }
+  },
+  "targetUsers": {
+    "title": "Perfect For",
+    "cafe": "Cafés",
+    "milkTea": "Bubble Tea",
+    "restaurant": "Small Restaurants",
+    "bakery": "Bakeries",
+    "foodTruck": "Food Trucks",
+    "shop": "Small Shops"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "step1": {
+      "title": "Download",
+      "description": "Download APK to Android tablet or open in browser"
+    },
+    "step2": {
+      "title": "Configure",
+      "description": "Add your menu, prices, and store info"
+    },
+    "step3": {
+      "title": "Start Selling",
+      "description": "Take orders, accept payment, print receipts - simple!"
+    }
+  },
+  "demo": {
+    "title": "See the Demo",
+    "subtitle": "Try it now in your browser, no installation needed",
+    "openDemo": "Open Demo →",
+    "note": "* Demo runs in browser with sample data"
+  },
+  "download": {
+    "title": "Download",
+    "subtitle": "Register to get the APK as soon as the official version is released",
+    "closedTestingTitle": "Currently in Closed Testing",
+    "closedTestingSubtitle": "Register below to become a tester and get access to download APK from Play Store",
+    "registerBtn": "Register for APK",
+    "requirements": "Requirements: Android 7.0+ • Size: ~15MB"
+  },
+  "waitlist": {
+    "title": "Join the Waitlist",
+    "subtitle": "Get early tester access when new versions are released",
+    "emailPlaceholder": "Your email",
+    "submitBtn": "Register Now",
+    "submitting": "Sending...",
+    "noSpam": "No spam - Only important updates"
+  },
+  "form": {
+    "emailRequired": "Please enter your email",
+    "emailInvalid": "Invalid email address",
+    "error": "An error occurred, please try again"
+  },
+  "footer": {
+    "tagline": "Free POS software for F&B",
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "© 2025 DIY Kiosk"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: January 2025",
+    "sections": {
+      "intro": {
+        "title": "1. Introduction",
+        "content": "DIY Kiosk (\"we\", \"our\", \"the app\") is committed to protecting user privacy. This policy explains how we collect, use, and protect your information when using the DIY Kiosk app on Android and the website diy-kiosk.store."
+      },
+      "dataCollection": {
+        "title": "2. Data We Collect",
+        "deviceDataTitle": "2.1. Data Stored on Your Device",
+        "deviceDataIntro": "DIY Kiosk operates on an offline-first model, meaning most data is stored locally on your device:",
+        "deviceDataList": [
+          "Categories and products (menu)",
+          "Orders and sales history",
+          "Store settings (name, address, logo)",
+          "Payment configuration (payOS API keys if configured)"
+        ],
+        "deviceDataNote": "This data is not sent to our servers. The data remains entirely on your device and you have full control over it.",
+        "websiteDataTitle": "2.2. Data Collected via Website",
+        "websiteDataIntro": "When you subscribe for updates on diy-kiosk.store, we collect:",
+        "websiteDataList": [
+          "Email address (to send update notifications)"
+        ]
+      },
+      "dataUsage": {
+        "title": "3. How We Use Your Data",
+        "list": [
+          "Device data: Only used for app functionality (sales management, invoice printing)",
+          "Email: To send notifications about app updates and new features (no spam, not shared with third parties)"
+        ]
+      },
+      "thirdParty": {
+        "title": "4. Third-Party Services",
+        "googlePlayTitle": "4.1. Google Play Store",
+        "googlePlayContent": "The app is distributed via Google Play Store. Google may collect data according to their policies. Please see"
+      },
+      "storage": {
+        "title": "5. Data Storage and Security",
+        "list": [
+          "App data is stored in local storage (IndexedDB) and device secure storage",
+          "API keys are stored securely using Android's Secure Storage",
+          "Email data is stored on encrypted secure servers"
+        ]
+      },
+      "rights": {
+        "title": "6. Your Rights",
+        "intro": "You have the right to:",
+        "list": [
+          "Delete app data: Uninstall the app or clear data in Android Settings",
+          "Unsubscribe from emails: Click the \"Unsubscribe\" link in emails or contact us",
+          "Export your data: Use the backup feature in the app"
+        ]
+      },
+      "children": {
+        "title": "7. Children's Privacy",
+        "content": "DIY Kiosk is designed for business users and is not directed at children under 13 years of age. We do not knowingly collect personal information from children."
+      },
+      "changes": {
+        "title": "8. Changes to This Policy",
+        "content": "We may update this policy from time to time. Any changes will be posted on this page with a new update date."
+      },
+      "contact": {
+        "title": "9. Contact Us",
+        "intro": "If you have questions about this privacy policy, please contact us:"
+      }
+    }
+  },
+  "langSwitcher": {
+    "label": "Language"
+  }
+}

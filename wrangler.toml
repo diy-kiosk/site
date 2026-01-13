@@ -1,6 +1,6 @@
 # DIY Kiosk Landing Page - Cloudflare Pages Config
 name = "diy-kiosk"
-pages_build_output_dir = "."
+pages_build_output_dir = "dist"
 
 # KV namespace for email subscriptions
 [[kv_namespaces]]
