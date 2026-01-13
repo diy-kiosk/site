@@ -9,9 +9,25 @@ default:
 
 # ===== Development =====
 
+# Install dependencies
+install:
+    mise x -- bun install
+
 # Start local dev server
 dev:
-    mise x -- bunx serve -p 3000
+    mise x -- bunx astro dev
+
+# Build for production
+build:
+    mise x -- bunx astro build
+
+# Preview production build
+preview:
+    mise x -- bunx astro preview
+
+# Type check
+typecheck:
+    mise x -- bunx astro check
 
 # ===== KV / Email Management =====
 

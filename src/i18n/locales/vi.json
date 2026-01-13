@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "DIY Kiosk - Tự xây quầy hàng của bạn | Phần mềm bán hàng miễn phí",
+    "description": "DIY Kiosk - Phần mềm quản lý bán hàng miễn phí, hoạt động offline, dễ sử dụng. Dành cho quán café, trà sữa, nhà hàng nhỏ. Tải APK Android miễn phí.",
+    "ogTitle": "DIY Kiosk - Tự xây quầy hàng của bạn",
+    "ogDescription": "Phần mềm quản lý bán hàng miễn phí, hoạt động offline, dễ sử dụng cho F&B.",
+    "locale": "vi_VN"
+  },
+  "nav": {
+    "features": "Tính năng",
+    "howItWorks": "Cách dùng",
+    "register": "Đăng ký",
+    "tryNow": "Dùng thử",
+    "backToHome": "← Quay lại Trang chủ"
+  },
+  "hero": {
+    "title": "Do It Yourself — Tự xây quầy hàng của bạn",
+    "subtitle": "Miễn phí • Hoạt động offline • Dễ sử dụng",
+    "viewDemo": "Xem Demo",
+    "download": "Tải về"
+  },
+  "carousel": {
+    "scenes": {
+      "menu": "Menu chính",
+      "cart": "Giỏ hàng",
+      "payment": "Thanh toán",
+      "admin": "Quản lý menu"
+    }
+  },
+  "features": {
+    "title": "Tính năng chính",
+    "subtitle": "Mọi thứ bạn cần để quản lý bán hàng",
+    "offline": {
+      "title": "Không cần internet",
+      "description": "Bán hàng bình thường khi mất mạng, tự đồng bộ khi có wifi"
+    },
+    "multiOrder": {
+      "title": "Quản lý nhiều đơn",
+      "description": "Xử lý nhiều bàn/khách cùng lúc, chuyển đổi nhanh chóng"
+    },
+    "voice": {
+      "title": "Xác nhận bằng giọng nói",
+      "description": "Tự động đọc \"Thanh toán thành công, 50 nghìn đồng\" - khách nghe rõ, không nhầm",
+      "badge": "Mới"
+    },
+    "qr": {
+      "title": "Thanh toán QR",
+      "description": "Khách quét mã VietQR, tiền về tài khoản ngay lập tức",
+      "badge": "Sắp ra mắt"
+    },
+    "print": {
+      "title": "In hóa đơn",
+      "description": "Xuất PDF hoặc in trực tiếp từ máy in nhiệt"
+    },
+    "free": {
+      "title": "Miễn phí",
+      "description": "Không phí hàng tháng, không phí ẩn, không giới hạn đơn hàng"
+    },
+    "quickSetup": {
+      "title": "Cài đặt nhanh",
+      "description": "Tải APK về tablet Android, mở lên là dùng được ngay"
+    }
+  },
+  "targetUsers": {
+    "title": "Phù hợp với",
+    "cafe": "Quán café",
+    "milkTea": "Trà sữa",
+    "restaurant": "Quán ăn nhỏ",
+    "bakery": "Tiệm bánh",
+    "foodTruck": "Food truck",
+    "shop": "Cửa hàng nhỏ"
+  },
+  "howItWorks": {
+    "title": "Cách sử dụng",
+    "step1": {
+      "title": "Tải về",
+      "description": "Tải APK về tablet Android hoặc mở trên trình duyệt"
+    },
+    "step2": {
+      "title": "Cấu hình",
+      "description": "Thêm menu, giá cả, thông tin quán của bạn"
+    },
+    "step3": {
+      "title": "Bán hàng",
+      "description": "Nhận đơn, thanh toán, in hóa đơn - đơn giản!"
+    }
+  },
+  "demo": {
+    "title": "Xem Demo",
+    "subtitle": "Trải nghiệm ngay trên trình duyệt, không cần cài đặt",
+    "openDemo": "Mở Demo →",
+    "note": "* Demo chạy trên trình duyệt với dữ liệu mẫu"
+  },
+  "download": {
+    "title": "Tải về",
+    "subtitle": "Đăng ký để nhận APK sớm nhất khi có phiên bản chính thức",
+    "closedTestingTitle": "Đang trong giai đoạn Closed Testing",
+    "closedTestingSubtitle": "Đăng ký bên dưới để trở thành tester và nhận quyền tải APK từ Play Store",
+    "registerBtn": "Đăng ký nhận APK",
+    "requirements": "Yêu cầu: Android 7.0 trở lên • Dung lượng: ~15MB"
+  },
+  "waitlist": {
+    "title": "Đăng ký dùng thử",
+    "subtitle": "Nhận tài khoản tester sớm nhất khi có phiên bản mới",
+    "emailPlaceholder": "Email của bạn",
+    "submitBtn": "Đăng ký ngay",
+    "submitting": "Đang gửi...",
+    "noSpam": "Không spam - Chỉ gửi khi có update quan trọng"
+  },
+  "form": {
+    "emailRequired": "Vui lòng nhập email",
+    "emailInvalid": "Email không hợp lệ",
+    "error": "Có lỗi xảy ra, vui lòng thử lại"
+  },
+  "footer": {
+    "tagline": "Phần mềm bán hàng miễn phí cho F&B",
+    "contact": "Liên hệ",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "© 2025 DIY Kiosk"
+  },
+  "privacy": {
+    "title": "Chính sách Bảo mật",
+    "lastUpdated": "Cập nhật lần cuối: Tháng 1, 2025",
+    "sections": {
+      "intro": {
+        "title": "1. Giới thiệu",
+        "content": "DIY Kiosk (\"chúng tôi\", \"ứng dụng\") cam kết bảo vệ quyền riêng tư của người dùng. Chính sách này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi sử dụng ứng dụng DIY Kiosk trên Android và trang web diy-kiosk.store."
+      },
+      "dataCollection": {
+        "title": "2. Dữ liệu chúng tôi thu thập",
+        "deviceDataTitle": "2.1. Dữ liệu lưu trên thiết bị của bạn",
+        "deviceDataIntro": "DIY Kiosk hoạt động theo mô hình offline-first, nghĩa là hầu hết dữ liệu được lưu trữ cục bộ trên thiết bị của bạn:",
+        "deviceDataList": [
+          "Danh mục và sản phẩm (menu)",
+          "Đơn hàng và lịch sử bán hàng",
+          "Cài đặt cửa hàng (tên, địa chỉ, logo)",
+          "Cấu hình thanh toán (khóa API payOS nếu được cấu hình)"
+        ],
+        "deviceDataNote": "Dữ liệu này không được gửi đến máy chủ của chúng tôi. Dữ liệu hoàn toàn nằm trên thiết bị của bạn và bạn có toàn quyền kiểm soát.",
+        "websiteDataTitle": "2.2. Dữ liệu thu thập qua trang web",
+        "websiteDataIntro": "Khi bạn đăng ký nhận cập nhật trên diy-kiosk.store, chúng tôi thu thập:",
+        "websiteDataList": [
+          "Địa chỉ email (để gửi thông báo cập nhật)"
+        ]
+      },
+      "dataUsage": {
+        "title": "3. Cách chúng tôi sử dụng dữ liệu",
+        "list": [
+          "Dữ liệu thiết bị: Chỉ sử dụng cho chức năng ứng dụng (quản lý bán hàng, in hóa đơn)",
+          "Email: Để gửi thông báo về cập nhật ứng dụng và tính năng mới (không spam, không chia sẻ với bên thứ ba)"
+        ]
+      },
+      "thirdParty": {
+        "title": "4. Dịch vụ bên thứ ba",
+        "googlePlayTitle": "4.1. Google Play Store",
+        "googlePlayContent": "Ứng dụng được phân phối qua Google Play Store. Google có thể thu thập dữ liệu theo chính sách của họ. Vui lòng xem"
+      },
+      "storage": {
+        "title": "5. Lưu trữ và bảo mật dữ liệu",
+        "list": [
+          "Dữ liệu ứng dụng được lưu trữ trong bộ nhớ cục bộ (IndexedDB) và bộ nhớ bảo mật của thiết bị",
+          "Khóa API được lưu trữ an toàn bằng Android's Secure Storage",
+          "Dữ liệu email được lưu trữ trên máy chủ bảo mật được mã hóa"
+        ]
+      },
+      "rights": {
+        "title": "6. Quyền của bạn",
+        "intro": "Bạn có quyền:",
+        "list": [
+          "Xóa dữ liệu ứng dụng: Gỡ cài đặt ứng dụng hoặc xóa dữ liệu trong Cài đặt Android",
+          "Hủy đăng ký email: Nhấp vào liên kết \"Hủy đăng ký\" trong email hoặc liên hệ với chúng tôi",
+          "Xuất dữ liệu: Sử dụng tính năng sao lưu trong ứng dụng"
+        ]
+      },
+      "children": {
+        "title": "7. Quyền riêng tư của trẻ em",
+        "content": "DIY Kiosk được thiết kế cho người dùng doanh nghiệp và không dành cho trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em."
+      },
+      "changes": {
+        "title": "8. Thay đổi chính sách này",
+        "content": "Chúng tôi có thể cập nhật chính sách này theo thời gian. Mọi thay đổi sẽ được đăng trên trang này với ngày cập nhật mới."
+      },
+      "contact": {
+        "title": "9. Liên hệ với chúng tôi",
+        "intro": "Nếu bạn có câu hỏi về chính sách bảo mật này, vui lòng liên hệ với chúng tôi:"
+      }
+    }
+  },
+  "langSwitcher": {
+    "label": "Ngôn ngữ"
+  }
+}

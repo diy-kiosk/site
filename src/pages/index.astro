@@ -1,0 +1,44 @@
+---
+// Root page - server-rendered for language detection
+export const prerender = false;
+
+const supportedLocales = ['en', 'vi', 'sv'];
+
+// Country to locale mapping
+const countryToLocale: Record<string, string> = {
+  'VN': 'vi',  // Vietnam
+  'SE': 'sv',  // Sweden
+  'US': 'en',  // USA
+  'GB': 'en',  // UK
+  'AU': 'en',  // Australia
+  'CA': 'en',  // Canada
+};
+
+// 1. Check cookie first (user's explicit choice)
+const langCookie = Astro.cookies.get('lang')?.value;
+if (langCookie && supportedLocales.includes(langCookie)) {
+  return Astro.redirect(`/${langCookie}`);
+}
+
+// 2. Check Accept-Language header (browser preference)
+const acceptLanguage = Astro.request.headers.get('Accept-Language') || '';
+const languages = acceptLanguage
+  .split(',')
+  .map(lang => lang.trim().split(';')[0].split('-')[0].toLowerCase());
+
+for (const code of languages) {
+  if (supportedLocales.includes(code)) {
+    return Astro.redirect(`/${code}`);
+  }
+}
+
+// 3. Check CF-IPCountry header (Cloudflare geolocation fallback)
+const country = Astro.request.headers.get('CF-IPCountry') || '';
+const geoLocale = countryToLocale[country];
+if (geoLocale) {
+  return Astro.redirect(`/${geoLocale}`);
+}
+
+// 4. Default to English
+return Astro.redirect('/en');
+---

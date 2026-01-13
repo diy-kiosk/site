@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+import { type Locale, getTranslations, localeNames, locales } from '../i18n';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+
+interface Props {
+  lang: Locale;
+  title: string;
+  description: string;
+  canonicalPath?: string;
+}
+
+const { lang, title, description, canonicalPath = '' } = Astro.props;
+const t = getTranslations(lang);
+const baseUrl = 'https://diy-kiosk.store';
+const canonicalUrl = `${baseUrl}/${lang}${canonicalPath}`;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonicalUrl}>
+
+  <!-- Alternate language links -->
+  {locales.map((locale) => (
+    <link rel="alternate" hreflang={locale} href={`${baseUrl}/${locale}${canonicalPath}`} />
+  ))}
+  <link rel="alternate" hreflang="x-default" href={`${baseUrl}/en${canonicalPath}`} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={t.meta.ogTitle}>
+  <meta property="og:description" content={t.meta.ogDescription}>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={canonicalUrl}>
+  <meta property="og:locale" content={t.meta.locale}>
+  <meta property="og:site_name" content="DIY Kiosk">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={t.meta.ogTitle}>
+  <meta name="twitter:description" content={t.meta.ogDescription}>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "DIY Kiosk",
+    "description": description,
+    "url": baseUrl,
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  })} />
+</head>
+<body class="bg-white text-gray-800">
+  <slot />
+</body>
+</html>

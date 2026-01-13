@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "DIY Kiosk - Bygg Din Egen Kassa | Gratis Kassasystem",
+    "description": "DIY Kiosk - Gratis kassasystem som fungerar offline, lätt att använda. För kaféer, bubbeltebutiker, små restauranger. Ladda ner gratis Android APK.",
+    "ogTitle": "DIY Kiosk - Bygg Din Egen Kassa",
+    "ogDescription": "Gratis kassasystem som fungerar offline, lätt att använda för F&B.",
+    "locale": "sv_SE"
+  },
+  "nav": {
+    "features": "Funktioner",
+    "howItWorks": "Hur Det Fungerar",
+    "register": "Registrera",
+    "tryNow": "Prova Nu",
+    "backToHome": "← Tillbaka till Startsidan"
+  },
+  "hero": {
+    "title": "Do It Yourself — Bygg Din Egen Kassa",
+    "subtitle": "Gratis • Fungerar Offline • Lätt att Använda",
+    "viewDemo": "Visa Demo",
+    "download": "Ladda Ner"
+  },
+  "carousel": {
+    "scenes": {
+      "menu": "Huvudmeny",
+      "cart": "Kundvagn",
+      "payment": "Betalning",
+      "admin": "Menyhantering"
+    }
+  },
+  "features": {
+    "title": "Huvudfunktioner",
+    "subtitle": "Allt du behöver för att hantera försäljning",
+    "offline": {
+      "title": "Inget Internet Krävs",
+      "description": "Sälj normalt offline, synkar automatiskt när du är ansluten"
+    },
+    "multiOrder": {
+      "title": "Hantera Flera Ordrar",
+      "description": "Hantera flera bord/kunder samtidigt, byt snabbt"
+    },
+    "voice": {
+      "title": "Röstbekräftelse",
+      "description": "Läser automatiskt \"Betalning lyckades, 50 kr\" - tydligt för kunder",
+      "badge": "Nytt"
+    },
+    "qr": {
+      "title": "QR-Betalning",
+      "description": "Kunder skannar QR-kod, pengarna kommer direkt",
+      "badge": "Kommer Snart"
+    },
+    "print": {
+      "title": "Skriv Ut Kvitton",
+      "description": "Exportera PDF eller skriv ut direkt från termoskrivare"
+    },
+    "free": {
+      "title": "Gratis För Alltid",
+      "description": "Inga månadsavgifter, inga dolda kostnader, obegränsade ordrar"
+    },
+    "quickSetup": {
+      "title": "Snabb Installation",
+      "description": "Ladda ner APK till Android-surfplatta, öppna och börja använda"
+    }
+  },
+  "targetUsers": {
+    "title": "Perfekt För",
+    "cafe": "Kaféer",
+    "milkTea": "Bubbelte",
+    "restaurant": "Små Restauranger",
+    "bakery": "Bagerier",
+    "foodTruck": "Food Trucks",
+    "shop": "Små Butiker"
+  },
+  "howItWorks": {
+    "title": "Hur Det Fungerar",
+    "step1": {
+      "title": "Ladda Ner",
+      "description": "Ladda ner APK till Android-surfplatta eller öppna i webbläsare"
+    },
+    "step2": {
+      "title": "Konfigurera",
+      "description": "Lägg till din meny, priser och butiksinformation"
+    },
+    "step3": {
+      "title": "Börja Sälja",
+      "description": "Ta emot ordrar, ta betalt, skriv ut kvitton - enkelt!"
+    }
+  },
+  "demo": {
+    "title": "Se Demon",
+    "subtitle": "Prova nu i din webbläsare, ingen installation krävs",
+    "openDemo": "Öppna Demo →",
+    "note": "* Demon körs i webbläsare med exempeldata"
+  },
+  "download": {
+    "title": "Ladda Ner",
+    "subtitle": "Registrera dig för att få APK så snart den officiella versionen släpps",
+    "closedTestingTitle": "Just nu i Stängd Testning",
+    "closedTestingSubtitle": "Registrera dig nedan för att bli testare och få tillgång att ladda ner APK från Play Store",
+    "registerBtn": "Registrera för APK",
+    "requirements": "Krav: Android 7.0+ • Storlek: ~15MB"
+  },
+  "waitlist": {
+    "title": "Gå Med i Väntelistan",
+    "subtitle": "Få tidig teståtkomst när nya versioner släpps",
+    "emailPlaceholder": "Din e-post",
+    "submitBtn": "Registrera Nu",
+    "submitting": "Skickar...",
+    "noSpam": "Ingen spam - Endast viktiga uppdateringar"
+  },
+  "form": {
+    "emailRequired": "Vänligen ange din e-post",
+    "emailInvalid": "Ogiltig e-postadress",
+    "error": "Ett fel uppstod, försök igen"
+  },
+  "footer": {
+    "tagline": "Gratis kassasystem för F&B",
+    "contact": "Kontakt",
+    "privacyPolicy": "Integritetspolicy",
+    "copyright": "© 2025 DIY Kiosk"
+  },
+  "privacy": {
+    "title": "Integritetspolicy",
+    "lastUpdated": "Senast uppdaterad: Januari 2025",
+    "sections": {
+      "intro": {
+        "title": "1. Introduktion",
+        "content": "DIY Kiosk (\"vi\", \"vår\", \"appen\") är engagerade i att skydda användarnas integritet. Denna policy förklarar hur vi samlar in, använder och skyddar din information när du använder DIY Kiosk-appen på Android och webbplatsen diy-kiosk.store."
+      },
+      "dataCollection": {
+        "title": "2. Data Vi Samlar In",
+        "deviceDataTitle": "2.1. Data Lagrad på Din Enhet",
+        "deviceDataIntro": "DIY Kiosk fungerar enligt en offline-first-modell, vilket innebär att de flesta data lagras lokalt på din enhet:",
+        "deviceDataList": [
+          "Kategorier och produkter (meny)",
+          "Ordrar och försäljningshistorik",
+          "Butiksinställningar (namn, adress, logotyp)",
+          "Betalningskonfiguration (payOS API-nycklar om konfigurerade)"
+        ],
+        "deviceDataNote": "Denna data skickas inte till våra servrar. Datan finns helt på din enhet och du har full kontroll över den.",
+        "websiteDataTitle": "2.2. Data Insamlad via Webbplats",
+        "websiteDataIntro": "När du prenumererar på uppdateringar på diy-kiosk.store samlar vi in:",
+        "websiteDataList": [
+          "E-postadress (för att skicka uppdateringsmeddelanden)"
+        ]
+      },
+      "dataUsage": {
+        "title": "3. Hur Vi Använder Din Data",
+        "list": [
+          "Enhetsdata: Används endast för appfunktionalitet (försäljningshantering, kvittoutskrift)",
+          "E-post: För att skicka meddelanden om appuppdateringar och nya funktioner (ingen spam, delas inte med tredje part)"
+        ]
+      },
+      "thirdParty": {
+        "title": "4. Tredjepartstjänster",
+        "googlePlayTitle": "4.1. Google Play Store",
+        "googlePlayContent": "Appen distribueras via Google Play Store. Google kan samla in data enligt deras policyer. Vänligen se"
+      },
+      "storage": {
+        "title": "5. Datalagring och Säkerhet",
+        "list": [
+          "Appdata lagras i lokal lagring (IndexedDB) och enhetens säkra lagring",
+          "API-nycklar lagras säkert med Androids Secure Storage",
+          "E-postdata lagras på krypterade säkra servrar"
+        ]
+      },
+      "rights": {
+        "title": "6. Dina Rättigheter",
+        "intro": "Du har rätt att:",
+        "list": [
+          "Ta bort appdata: Avinstallera appen eller rensa data i Android-inställningar",
+          "Avregistrera från e-post: Klicka på \"Avregistrera\"-länken i e-postmeddelanden eller kontakta oss",
+          "Exportera din data: Använd säkerhetskopieringsfunktionen i appen"
+        ]
+      },
+      "children": {
+        "title": "7. Barns Integritet",
+        "content": "DIY Kiosk är designad för företagsanvändare och riktar sig inte till barn under 13 år. Vi samlar inte medvetet in personlig information från barn."
+      },
+      "changes": {
+        "title": "8. Ändringar av Denna Policy",
+        "content": "Vi kan uppdatera denna policy från tid till annan. Alla ändringar kommer att publiceras på denna sida med ett nytt uppdateringsdatum."
+      },
+      "contact": {
+        "title": "9. Kontakta Oss",
+        "intro": "Om du har frågor om denna integritetspolicy, vänligen kontakta oss:"
+      }
+    }
+  },
+  "langSwitcher": {
+    "label": "Språk"
+  }
+}
