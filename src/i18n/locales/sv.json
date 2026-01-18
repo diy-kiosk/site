@@ -93,10 +93,10 @@
   },
   "download": {
     "title": "Ladda Ner",
-    "subtitle": "Registrera dig för att få APK så snart den officiella versionen släpps",
-    "closedTestingTitle": "Just nu i Stängd Testning",
-    "closedTestingSubtitle": "Registrera dig nedan för att bli testare och få tillgång att ladda ner APK från Play Store",
-    "registerBtn": "Registrera för APK",
+    "subtitle": "Hämta den senaste APK från våra GitHub-utgåvor",
+    "pendingApprovalTitle": "Väntar på Play Store-godkännande",
+    "pendingApprovalSubtitle": "Medan vi väntar på godkännande från Google Play Store kan du ladda ner APK direkt från GitHub",
+    "downloadBtn": "Ladda ner APK från GitHub",
     "requirements": "Krav: Android 7.0+ • Storlek: ~15MB"
   },
   "waitlist": {

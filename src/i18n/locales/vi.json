@@ -93,10 +93,10 @@
   },
   "download": {
     "title": "Tải về",
-    "subtitle": "Đăng ký để nhận APK sớm nhất khi có phiên bản chính thức",
-    "closedTestingTitle": "Đang trong giai đoạn Closed Testing",
-    "closedTestingSubtitle": "Đăng ký bên dưới để trở thành tester và nhận quyền tải APK từ Play Store",
-    "registerBtn": "Đăng ký nhận APK",
+    "subtitle": "Tải APK mới nhất từ GitHub releases",
+    "pendingApprovalTitle": "Đang chờ phê duyệt Play Store",
+    "pendingApprovalSubtitle": "Trong khi chờ Google Play Store phê duyệt, bạn có thể tải APK trực tiếp từ GitHub",
+    "downloadBtn": "Tải APK từ GitHub",
     "requirements": "Yêu cầu: Android 7.0 trở lên • Dung lượng: ~15MB"
   },
   "waitlist": {

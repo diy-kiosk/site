@@ -93,10 +93,10 @@
   },
   "download": {
     "title": "Download",
-    "subtitle": "Register to get the APK as soon as the official version is released",
-    "closedTestingTitle": "Currently in Closed Testing",
-    "closedTestingSubtitle": "Register below to become a tester and get access to download APK from Play Store",
-    "registerBtn": "Register for APK",
+    "subtitle": "Get the latest APK from our GitHub releases",
+    "pendingApprovalTitle": "Pending Play Store Approval",
+    "pendingApprovalSubtitle": "While we wait for Google Play Store approval, you can download the APK directly from GitHub",
+    "downloadBtn": "Download APK from GitHub",
     "requirements": "Requirements: Android 7.0+ • Size: ~15MB"
   },
   "waitlist": {
